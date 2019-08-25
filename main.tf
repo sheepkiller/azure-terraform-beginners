@@ -1,20 +1,20 @@
-# ##############################################################################
-# # * HashiCorp Beginner's Guide to Using Terraform on Azure
-# # 
-# # This Terraform configuration will create the following:
-# #
-# # Resource group with a virtual network and subnet
-# # An Ubuntu Linux server running Apache
+##############################################################################
+# * HashiCorp Beginner's Guide to Using Terraform on Azure
+# 
+# This Terraform configuration will create the following:
+#
+# Resource group with a virtual network and subnet
+# An Ubuntu Linux server running Apache
 
-# ##############################################################################
-# # * Shared infrastructure resources
+##############################################################################
+# * Shared infrastructure resources
 
 
-# # whilst the `version` attribute is optional, we recommend pinning to a given version of the Provider
-# provider "azurerm" {
-#   # whilst the `version` attribute is optional, we recommend pinning to a given version of the Provider
-#   version = "=1.33.0"
-# }
+# whilst the `version` attribute is optional, we recommend pinning to a given version of the Provider
+provider "azurerm" {
+  # whilst the `version` attribute is optional, we recommend pinning to a given version of the Provider
+  version = "=1.33.0"
+}
 
 # # First we'll create a resource group. In Azure every resource belongs to a 
 # # resource group. Think of it as a container to hold all your resources. 
